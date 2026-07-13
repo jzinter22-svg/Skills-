@@ -184,6 +184,44 @@ security issues, and readability. Point out the single most important
 issue first, then list minor nits separately.
 ```
 
+### [JayZeeDesign/awesome-claude-skills](https://github.com/JayZeeDesign/awesome-claude-skills)
+- **Stars:** ~167 (as of 2026-07-13)
+- **License:** Apache-2.0 for the example skills themselves; `document-skills/` (docx/pdf/pptx/xlsx) is source-available, not open source — see the repo's `THIRD_PARTY_NOTICES.md` for bundled dependency licenses (BSD-2-Clause, GPL-3.0 for FFmpeg, MIT-CMU, SIL OFL v1.1 for fonts)
+- **Last updated:** actively maintained mirror; verify against upstream before citing a date
+
+A community-maintained mirror/redistribution of Anthropic's official `anthropics/skills` example Agent Skills, organized as ready-to-browse `SKILL.md` folders. Useful if you want to read a specific skill's instructions directly on GitHub without cloning the upstream repo.
+
+Best for: browsing individual skill implementations one at a time; prefer installing from the canonical `anthropics/skills` (above) for production use.
+
+**Skills included:**
+| Skill | Purpose |
+|---|---|
+| `algorithmic-art` | Generative/algorithmic art with p5.js (seeded randomness, flow fields, particle systems) |
+| `artifacts-builder` | Multi-component claude.ai HTML artifacts using React, Tailwind CSS, shadcn/ui |
+| `brand-guidelines` | Apply Anthropic's official brand colors/typography to an artifact |
+| `canvas-design` | Visual art in .png/.pdf driven by an explicit design philosophy |
+| `document-skills/docx`, `/pdf`, `/pptx`, `/xlsx` | Create, edit, and analyze Word/PDF/PowerPoint/Excel files (tracked changes, formatting preservation, text extraction) |
+| `internal-comms` | Draft status reports, newsletters, and FAQs in a company's preferred format |
+| `mcp-builder` | Guide for building well-designed MCP servers (Python FastMCP or Node/TS SDK) |
+| `skill-creator` | Guide for authoring or updating a Claude Agent Skill |
+| `slack-gif-creator` | Composable animation primitives for Slack-compliant animated GIFs |
+| `template-skill` | Blank starter scaffold (`SKILL.md` frontmatter only) for a new skill |
+| `theme-factory` | Coordinated color/typeface theme packs for slides, docs, and HTML pages |
+| `ui-design` | Single-file HTML/Tailwind UI exploration and inspiration |
+| `webapp-testing` | Playwright-based toolkit for driving/screenshotting/debugging a local web app |
+
+**Installation:**
+```bash
+git clone https://github.com/JayZeeDesign/awesome-claude-skills.git
+# Copy an individual skill folder (e.g. skill-creator/) into your project's
+# .claude/skills/ directory, or read its SKILL.md directly on GitHub
+```
+
+**Usage example:**
+```text
+"Use the webapp-testing skill to screenshot the login page and check the console for errors"
+```
+
 ## Notes
 - Several of the highest-value repos in this space (`anthropics/skills`, `disler/claude-code-hooks-mastery`, `langgptai/awesome-claude-prompts`) ship without a LICENSE file — GitHub's API confirms `license: null`. That does not make them public domain; treat them as "look but confirm before you reuse commercially."
 - `hesreallyhim/awesome-claude-code` is CC BY-NC-ND 4.0, which explicitly disallows commercial use and derivative redistribution — fine for personal reference, not for repackaging.
@@ -194,6 +232,7 @@ issue first, then list minor nits separately.
 | Repository | License |
 |---|---|
 | anthropics/skills | None (no LICENSE file) |
+| JayZeeDesign/awesome-claude-skills | Apache-2.0 (example skills); document-skills source-available, not OSS |
 | modelcontextprotocol/servers | Apache-2.0 / MIT (dual) / CC-BY-4.0 (docs) |
 | punkpeye/awesome-mcp-servers | MIT |
 | hesreallyhim/awesome-claude-code | CC BY-NC-ND 4.0 (non-commercial, no derivatives) |
