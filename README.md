@@ -12,6 +12,7 @@ skills/
   charts/         icons/         frontend/       backend/
   ui/             ux/            themes/         colors/
   typography/     arabic/        documentation/  productivity/
+  education/
 ```
 
 Each folder has its own `README.md` with: category description, per-repo stars/license/last-updated, why it's included, install command, and a usage snippet — plus a License Summary table at the end.
@@ -36,6 +37,7 @@ Each folder has its own `README.md` with: category description, per-repo stars/l
 | Arabic (Typography & RTL) | [`skills/arabic`](skills/arabic/README.md) | Build an Arabic or bilingual Arabic+Latin UI, convert LTR CSS to RTL, or process Arabic text |
 | Documentation Skills | [`skills/documentation`](skills/documentation/README.md) | Write a README, stand up a docs site, record an ADR, or set a docstring style |
 | Claude Code Productivity | [`skills/productivity`](skills/productivity/README.md) | Extend Claude Code with Skills/MCP servers, or adopt proven hooks/commands/prompt libraries |
+| Education | [`skills/education`](skills/education/README.md) | Build a tutoring/teaching agent, design lesson plans or assessments, or ground an agent in evidence-rated pedagogy |
 
 ## Full resource index
 
@@ -227,6 +229,11 @@ Each folder has its own `README.md` with: category description, per-repo stars/l
 | [awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | Apache-2.0 | Bundled agents/skills/commands/hooks/templates kit |
 | [claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery) | ⚠ No LICENSE file | Worked examples of every Claude Code hook lifecycle event |
 | [awesome-claude-prompts](https://github.com/langgptai/awesome-claude-prompts) | ⚠ No LICENSE file | Curated Claude-specific prompt library |
+
+### Education
+| Resource | License | One-liner |
+|---|---|---|
+| [education-agent-skills](https://github.com/GarethManning/education-agent-skills) | ⚠ CC BY-SA 4.0 | 165 evidence-rated pedagogical skills across 20 teaching domains |
 
 ## License legend
 
