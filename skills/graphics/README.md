@@ -217,6 +217,29 @@ layer.add(circle);
 stage.add(layer);
 ```
 
+### [SVG.NET](https://github.com/svg-net/SVG)
+- **Stars:** ~1,300 (as of 2026-07-13)
+- **License:** MS-PL (Microsoft Public License — permissive, but not one of the common OSI "big three"; review its patent/redistribution terms if bundling commercially)
+- **Last updated:** actively maintained community fork; re-check the push date before citing it as current
+
+A C# library for reading, writing, and rendering SVG 1.1 images in .NET applications, targeting .NET Standard 2.0 so it runs on Windows, Linux, and macOS (with some rendering caveats on non-Windows platforms). Originally Microsoft's SVG.NET from CodePlex, now community-maintained.
+
+Best for server-side or desktop .NET workloads that need to parse, manipulate, or rasterize SVG files programmatically — this is the odd one out in this category (backend/.NET rather than browser/JS), reach for it when the other entries here don't apply because you're not in a web frontend.
+
+**Installation:**
+```bash
+dotnet add package Svg
+```
+
+**Usage example:**
+```csharp
+using Svg;
+
+var document = SvgDocument.Open<SvgDocument>("input.svg");
+var bitmap = document.Draw();
+bitmap.Save("output.png");
+```
+
 ## Notes
 
 - **GSAP's license is custom, not MIT/Apache/BSD.** It became free for all use (including commercial) in 2024, but it is a proprietary "no-charge" license, not an OSI-approved open-source license — review the terms if redistribution/forking matters for your use case.
@@ -234,3 +257,4 @@ stage.add(layer);
 | [p5.js](https://github.com/processing/p5.js) | LGPL-2.1 |
 | [GSAP](https://github.com/greensock/GSAP) | Custom (free, non-OSI GreenSock license) |
 | [Konva.js](https://github.com/konvajs/konva) | MIT |
+| [SVG.NET](https://github.com/svg-net/SVG) | MS-PL |
