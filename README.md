@@ -12,7 +12,7 @@ skills/
   charts/         icons/         frontend/       backend/
   ui/             ux/            themes/         colors/
   typography/     arabic/        documentation/  productivity/
-  education/
+  education/      data-extraction/
 ```
 
 Each folder has its own `README.md` with: category description, per-repo stars/license/last-updated, why it's included, install command, and a usage snippet — plus a License Summary table at the end.
@@ -38,6 +38,7 @@ Each folder has its own `README.md` with: category description, per-repo stars/l
 | Documentation Skills | [`skills/documentation`](skills/documentation/README.md) | Write a README, stand up a docs site, record an ADR, or set a docstring style |
 | Claude Code Productivity | [`skills/productivity`](skills/productivity/README.md) | Extend Claude Code with Skills/MCP servers, or adopt proven hooks/commands/prompt libraries |
 | Education | [`skills/education`](skills/education/README.md) | Build a tutoring/teaching agent, design lesson plans or assessments, or ground an agent in evidence-rated pedagogy |
+| AI Data Extraction | [`skills/data-extraction`](skills/data-extraction/README.md) | Crawl/scrape web pages into clean Markdown/JSON for a RAG pipeline or agent tool |
 
 ## Full resource index
 
@@ -234,6 +235,11 @@ Each folder has its own `README.md` with: category description, per-repo stars/l
 | Resource | License | One-liner |
 |---|---|---|
 | [education-agent-skills](https://github.com/GarethManning/education-agent-skills) | ⚠ CC BY-SA 4.0 | 165 evidence-rated pedagogical skills across 20 teaching domains |
+
+### AI Data Extraction
+| Resource | License | One-liner |
+|---|---|---|
+| [crawl4ai](https://github.com/unclecode/crawl4ai) | Apache-2.0 | Async Python crawler that turns web pages into LLM-ready Markdown/JSON |
 
 ## License legend
 
