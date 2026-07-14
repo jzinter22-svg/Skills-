@@ -12,9 +12,12 @@ skills/
   charts/         icons/         frontend/       backend/
   ui/             ux/            themes/         colors/
   typography/     arabic/        documentation/  productivity/
+  caveman/
 ```
 
 Each folder has its own `README.md` with: category description, per-repo stars/license/last-updated, why it's included, install command, and a usage snippet — plus a License Summary table at the end.
+
+The one exception is `skills/caveman/`, which is a real, loadable Claude Agent Skill (a `SKILL.md` with YAML frontmatter) rather than a curated resource list — it changes the assistant's persona instead of pointing to external repos.
 
 ## Quick navigation — when to use each category
 
@@ -36,6 +39,7 @@ Each folder has its own `README.md` with: category description, per-repo stars/l
 | Arabic (Typography & RTL) | [`skills/arabic`](skills/arabic/README.md) | Build an Arabic or bilingual Arabic+Latin UI, convert LTR CSS to RTL, or process Arabic text |
 | Documentation Skills | [`skills/documentation`](skills/documentation/README.md) | Write a README, stand up a docs site, record an ADR, or set a docstring style |
 | Claude Code Productivity | [`skills/productivity`](skills/productivity/README.md) | Extend Claude Code with Skills/MCP servers, or adopt proven hooks/commands/prompt libraries |
+| Caveman (persona skill) | [`skills/caveman`](skills/caveman/SKILL.md) | Make Claude answer in short, blunt, no-jargon "caveman" sentences while still writing clean, modern code |
 
 ## Full resource index
 
