@@ -225,6 +225,7 @@ The one exception is `skills/caveman/`, which is a real, loadable Claude Agent S
 | Resource | License | One-liner |
 |---|---|---|
 | [anthropics/skills](https://github.com/anthropics/skills) | ⚠ No LICENSE file | Anthropic's official Agent Skills reference repo |
+| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | MIT | Claude Code skill that cuts ~65% of output tokens via terse "caveman-speak" |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Apache-2.0/MIT/CC-BY (mixed) | Official MCP reference server implementations |
 | [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | MIT | Large curated list of third-party MCP servers |
 | [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | ⚠ CC BY-NC-ND 4.0 | Comprehensive Claude Code ecosystem directory |
