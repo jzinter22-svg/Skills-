@@ -34,6 +34,31 @@ Instructions that Claude follows when this skill is triggered.
 "Use the PDF skill to extract form fields from path/to/file.pdf"
 ```
 
+### [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
+- **Stars:** ~89,347 (as of 2026-07-14, verified live via GitHub API)
+- **License:** MIT
+- **Last updated:** pushed 2026-07-03 (v1.9.1); repo metadata updated 2026-07-14
+
+A Claude Code skill/plugin (also supporting 30+ other AI coding agents) that compresses agent output into terse "caveman-speak" while keeping code and error text byte-for-byte identical — Anthropic benchmarks in the README show ~65% average output-token reduction. Ships six compression levels (`lite`/`full`/`ultra`/`wenyan`), plus `/caveman-commit`, `/caveman-review`, and `/caveman-compress` commands, with local-only processing and zero telemetry.
+
+Best for: cutting output-token spend/latency on long agent sessions where verbose prose isn't needed — commit messages, PR review comments, and general chat replies.
+
+**Installation:**
+```bash
+# macOS/Linux/WSL
+curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.sh | bash
+
+# Windows PowerShell
+irm https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.ps1 | iex
+```
+
+**Usage example:**
+```text
+/caveman ultra
+/caveman-commit
+/caveman-stats
+```
+
 ### [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 - **Stars:** ~88,400 (as of 2026-07-13)
 - **License:** Apache-2.0 for new/spec code, MIT retained for legacy contributions, CC-BY-4.0 for docs (dual/triple-licensed, see repo LICENSE)
@@ -194,6 +219,7 @@ issue first, then list minor nits separately.
 | Repository | License |
 |---|---|
 | anthropics/skills | None (no LICENSE file) |
+| JuliusBrussee/caveman | MIT |
 | modelcontextprotocol/servers | Apache-2.0 / MIT (dual) / CC-BY-4.0 (docs) |
 | punkpeye/awesome-mcp-servers | MIT |
 | hesreallyhim/awesome-claude-code | CC BY-NC-ND 4.0 (non-commercial, no derivatives) |
