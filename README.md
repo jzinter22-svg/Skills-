@@ -12,12 +12,14 @@ skills/
   charts/         icons/         frontend/       backend/
   ui/             ux/            themes/         colors/
   typography/     arabic/        documentation/  productivity/
-  caveman/
+  caveman/        ui-ux-pro-max/
 ```
 
 Each folder has its own `README.md` with: category description, per-repo stars/license/last-updated, why it's included, install command, and a usage snippet — plus a License Summary table at the end.
 
-The one exception is `skills/caveman/`, which is a real, loadable Claude Agent Skill (a `SKILL.md` with YAML frontmatter) rather than a curated resource list — it changes the assistant's persona instead of pointing to external repos.
+Two exceptions are real, loadable Claude Agent Skills (a `SKILL.md` with YAML frontmatter) rather than curated resource lists:
+- `skills/caveman/` changes the assistant's persona instead of pointing to external repos.
+- `skills/ui-ux-pro-max/` bundles a searchable design-intelligence database (styles, palettes, typography, UX guidelines, chart/stack guidance) plus a `scripts/search.py` CLI the skill invokes directly — imported verbatim (MIT) from [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill).
 
 ## Quick navigation — when to use each category
 
@@ -40,6 +42,7 @@ The one exception is `skills/caveman/`, which is a real, loadable Claude Agent S
 | Documentation Skills | [`skills/documentation`](skills/documentation/README.md) | Write a README, stand up a docs site, record an ADR, or set a docstring style |
 | Claude Code Productivity | [`skills/productivity`](skills/productivity/README.md) | Extend Claude Code with Skills/MCP servers, or adopt proven hooks/commands/prompt libraries |
 | Caveman (persona skill) | [`skills/caveman`](skills/caveman/SKILL.md) | Make Claude answer in short, blunt, no-jargon "caveman" sentences while still writing clean, modern code |
+| UI/UX Pro Max (design-intelligence skill) | [`skills/ui-ux-pro-max`](skills/ui-ux-pro-max/SKILL.md) | Search a local database of styles, color palettes, font pairings, UX guidelines, and per-stack rules while designing/reviewing UI |
 
 ## Full resource index
 
@@ -226,6 +229,7 @@ The one exception is `skills/caveman/`, which is a real, loadable Claude Agent S
 |---|---|---|
 | [anthropics/skills](https://github.com/anthropics/skills) | ⚠ No LICENSE file | Anthropic's official Agent Skills reference repo |
 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | MIT | Claude Code skill that cuts ~65% of output tokens via terse "caveman-speak" |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT | Local design-intelligence skill: styles, color palettes, typography, UX guidelines, and 22-stack rules via a bundled search CLI |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Apache-2.0/MIT/CC-BY (mixed) | Official MCP reference server implementations |
 | [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | MIT | Large curated list of third-party MCP servers |
 | [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | ⚠ CC BY-NC-ND 4.0 | Comprehensive Claude Code ecosystem directory |
